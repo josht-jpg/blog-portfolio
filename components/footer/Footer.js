@@ -26,11 +26,20 @@ const socialMediaLinks = [
   },
 ];
 
+const sourceCodeHref = "https://github.com/josht-jpg/blog-portfolio";
+
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <a className={styles.sourceCodeLink}>See the Source Code</a>
+        <a
+          className={styles.sourceCodeLink}
+          href={sourceCodeHref}
+          target="_blank"
+          rel="noopener"
+        >
+          See the Source Code
+        </a>
 
         <a href={`mailto: ${EMAIL_ADDRESS}`} className={styles.email}>
           <GrMail className={styles.emailIcon} />
