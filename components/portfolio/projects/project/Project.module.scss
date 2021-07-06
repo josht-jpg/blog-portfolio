@@ -1,0 +1,53 @@
+@import "../../../../styles/fadeIn.scss";
+@import "../../../../styles/variables.scss";
+
+.container {
+  width: 48%;
+  cursor: pointer;
+}
+
+.header {
+  margin-bottom: 3px;
+  transition: 300ms;
+}
+
+.ruler {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  max-width: 82%;
+}
+
+.thumbnail {
+  border-radius: 5px;
+  transition: 300ms;
+}
+
+.description {
+  width: 70%;
+  text-align: start;
+  margin-left: 12.5%;
+  font-size: 1.125rem;
+  height: 75px;
+  overflow: auto;
+}
+
+.viewProject {
+  width: 70%;
+  text-align: start;
+  margin-left: 12.5%;
+  font-size: 1.125rem;
+}
+
+.viewProjectText {
+  text-decoration: underline;
+  text-decoration-color: $main-blue;
+  text-decoration-thickness: 2.5px;
+  font-style: normal;
+  cursor: pointer;
+}
+
+.viewProjectIcon {
+  @extend .fadeIn;
+  color: $main-blue;
+  font-size: 1.1rem;
+}

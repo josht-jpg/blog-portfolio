@@ -1,0 +1,49 @@
+.container {
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 0;
+}
+
+.ruler {
+  margin-top: 3px;
+  margin-bottom: 1.25rem;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  width: 80%;
+  padding: auto 50%;
+  justify-content: center;
+}
+
+.detailsContainer {
+  width: 70%;
+  margin: auto;
+}
+
+.description {
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.screenshot {
+  border-radius: 7px;
+  box-shadow: rgb(0 98 227) 0px 0px 7px;
+  width: 75%;
+  transform: perspective(500px) rotateY(-7deg) rotateX(0.75deg);
+  margin: auto;
+}
+
+.stackContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 75ch;
+  max-width: 80vw;
+  margin: auto;
+}

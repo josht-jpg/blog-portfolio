@@ -1,0 +1,51 @@
+@import "../../styles/clickable.scss";
+
+.dropDown {
+  border-bottom: 1px solid #a6afd9;
+  margin-top: 0px;
+  margin-bottom: 5px;
+  max-height: 45px;
+  transition: max-height 350ms;
+  overflow: hidden;
+}
+
+.animateDropDown {
+  max-height: 500vh;
+  transition: max-height 650ms ease-in;
+  overflow-y: auto;
+}
+
+.header {
+  @extend .clickable;
+  text-align: start;
+  font-size: 1.2rem;
+  margin-top: 0.9rem;
+  font-weight: bold;
+}
+
+.dropDownArrow {
+  font-size: 0.9rem;
+  margin-left: 3px;
+}
+
+.itemsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: calc(1050px + 6vw);
+  margin: auto;
+}
+
+.motivation {
+  font-size: 1.1rem;
+  font-weight: bold;
+  width: 75ch;
+  text-align: start;
+  margin-bottom: 1.5rem;
+}
+
+.lessonsLearned {
+  text-align: start;
+  width: 75ch;
+  font-size: 1.1rem;
+}

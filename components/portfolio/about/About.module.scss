@@ -1,0 +1,50 @@
+@import "../../../styles/variables.scss";
+
+.container {
+  margin-top: 4rem;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.header {
+  font-size: 1.75rem;
+  color: $main-blue;
+}
+
+.paragraphsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: auto;
+  text-align: start;
+}
+
+.paragraph {
+  margin: auto;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+.outerParagraph {
+  @extend .paragraph;
+  width: 29%;
+}
+
+.innerParagraph {
+  @extend .paragraph;
+  width: 32%;
+  padding-left: 4%;
+  padding-right: 4%;
+  box-sizing: border-box;
+  border-right: 2px solid $main-blue;
+  border-left: 2px solid $main-blue;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 850px;
+  max-width: 80vw;
+  margin: auto;
+}

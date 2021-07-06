@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+
+.contentContainer {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+@media (min-width: 1275px) {
+  .contentContainer {
+    grid-template-columns: 2fr 1fr;
+    gap: 64px 96px;
+  }
+}
+
+$header-font-size: 1.3rem;
+
+.articlesHeader {
+  font-size: $header-font-size;
+  margin-bottom: 3.75rem;
+}
+
+.bookNotesHeader {
+  font-size: $header-font-size;
+  margin-bottom: 3.1rem;
+}

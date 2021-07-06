@@ -1,0 +1,66 @@
+@import "../../../styles/variables.scss";
+
+.bookCardContainer {
+  width: 300px;
+  text-align: center;
+  margin: 3.5vh 2vw;
+  height: 125px;
+}
+
+.bookCard {
+  float: left;
+  width: 100%;
+  height: 100px;
+  box-shadow: gray 0 0 6px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  padding-bottom: 3px;
+  overflow: hidden;
+  transition: 300ms;
+  cursor: pointer;
+  padding-right: 2px;
+  margin: 0px;
+}
+
+.bookCard:hover {
+  transition: 300ms;
+  box-shadow: $main-blue 0 0 7px;
+}
+
+.cover {
+  float: left;
+  width: 56px;
+  height: 75px;
+  border-radius: 4%;
+  box-shadow: gray 0 0 8px;
+  transition: 300ms;
+  vertical-align: middle;
+  margin-right: 2px;
+}
+
+.titleContainer {
+  display: flex;
+  align-items: center;
+  height: 75px;
+}
+
+.title {
+  margin: 2px auto 0 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.details {
+  text-align: start;
+  margin: 5px 2px;
+  font-size: 0.8rem;
+}
+
+.source {
+  float: left;
+  font-size: 0.93rem;
+  margin-top: 4px;
+  opacity: 0.75;
+}

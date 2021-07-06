@@ -1,0 +1,57 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/clickable.scss";
+
+.container {
+  display: flex;
+  margin-top: 3.25rem;
+  justify-content: center;
+}
+
+.textContainer {
+  width: max(25vw, 14rem);
+  padding-top: 2%;
+  text-align: center;
+}
+
+.hello {
+  font-style: normal;
+  color: $main-blue;
+}
+
+.ruler {
+  width: 93%;
+}
+
+.upperRuler {
+  @extend .ruler;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+
+.lowerRuler {
+  @extend .ruler;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+.contentsItem {
+  @extend .clickable;
+  text-decoration: underline solid;
+  text-decoration-color: $main-blue;
+  text-decoration-thickness: 2.5px;
+  list-style: none;
+  margin: 9px auto;
+}
+
+.contentsItem:hover {
+  transition: 300ms;
+  text-decoration: underline transparent;
+}
+
+.welcomeImage {
+  margin-left: min(4rem, 5vw);
+  width: 360px;
+  max-width: 40vw;
+  border-radius: 7px;
+  box-shadow: $main-blue 0 0 7px;
+}

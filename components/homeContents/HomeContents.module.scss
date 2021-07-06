@@ -1,0 +1,25 @@
+@import "../../styles/variables.scss";
+
+.container {
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.homeImage {
+  height: 250px;
+  border-radius: 7px;
+  box-shadow: gray 0 0 8px;
+  display: block;
+  margin: auto;
+}
+
+.hello {
+  color: $main-blue;
+  font-style: normal;
+}
+
+.recentPostsHeader {
+  text-align: center;
+  margin-top: 3rem;
+  color: $main-blue;
+}

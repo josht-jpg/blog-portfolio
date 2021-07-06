@@ -1,0 +1,66 @@
+@import "../../../styles/fadeIn.scss";
+@import "../../../styles/clickable.scss";
+@import "../../../styles/variables.scss";
+
+.title {
+  width: 50%;
+  margin: 1.25rem auto;
+  text-align: center;
+}
+
+.authors {
+  text-align: center;
+  font-size: 1.05rem;
+}
+
+.cover {
+  display: block;
+  height: 90px;
+  width: 71px;
+  margin: 1.25rem auto 1.25rem auto;
+  border-radius: 8%;
+  box-shadow: $main-blue 0 0 8px;
+}
+
+.details {
+  font-weight: bold;
+  text-align: center;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 420px;
+  max-width: 80%;
+  margin: 1.25rem auto auto;
+}
+
+.divider {
+  width: 75%;
+}
+
+.description {
+  text-align: center;
+  font-size: 1.12rem;
+  width: 70%;
+  max-height: 35%;
+  margin: auto;
+  margin-top: 1.5rem;
+  overflow: auto;
+}
+
+.description a {
+  color: $main-blue;
+}
+
+.notesHeader {
+  margin: 2.25rem auto;
+  text-align: center;
+}
+
+.notes {
+  width: 72%;
+  margin: 1rem auto;
+  font-size: 1.05rem;
+  text-align: start;
+}

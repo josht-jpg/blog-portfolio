@@ -1,0 +1,8 @@
+.booksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-basis: 100%;
+  max-width: 1200px;
+  margin: 3rem auto 4rem auto;
+}

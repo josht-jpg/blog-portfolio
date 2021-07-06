@@ -1,0 +1,44 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/clickable.scss";
+
+.container {
+  margin-top: 8rem;
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.header {
+  color: $main-blue;
+}
+
+.icon {
+  color: $main-blue;
+  font-size: 1.75rem;
+  margin: auto 4rem;
+}
+
+.emailIcon {
+  @extend .icon;
+  display: block;
+  margin: auto;
+  margin-top: 2.25rem;
+}
+
+.emailAddress {
+  @extend .clickable;
+  font-size: 1.4rem;
+  text-decoration: underline solid;
+  text-decoration-color: $main-blue;
+  text-decoration-thickness: 2.5px;
+}
+
+.buttonsContainer {
+  margin: 2.25rem auto;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.socialMediaButton {
+  background: none;
+  border: none;
+}

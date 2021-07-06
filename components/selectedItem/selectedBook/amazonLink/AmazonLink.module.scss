@@ -1,0 +1,34 @@
+.amazonLink {
+  display: flex;
+  align-items: center;
+  width: 180px;
+  height: 40px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  border: 1px solid gray;
+  box-shadow: gray 0 0 3px;
+  background-color: transparent;
+  font-size: 1.03rem;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 18px auto;
+  padding: 5px;
+}
+
+.icon {
+  margin-left: 10px;
+}
+
+.amazonLink:hover {
+  box-shadow: #f60 0 0 5px;
+}
+
+.buttonText {
+  text-decoration: none;
+  margin: auto;
+  text-align: center;
+  padding-right: 1.25ch;
+}

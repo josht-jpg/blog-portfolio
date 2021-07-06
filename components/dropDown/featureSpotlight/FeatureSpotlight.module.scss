@@ -1,0 +1,25 @@
+@import "../../../styles/variables.scss";
+
+.title {
+  font-size: 1.28rem;
+  max-width: 640px;
+}
+
+.description {
+  width: 640px;
+  font-size: 1.1rem;
+}
+
+.description a {
+  color: $main-blue;
+  text-decoration: underline;
+}
+
+.playerContainer {
+  margin: auto;
+  margin-bottom: 2rem;
+  max-width: 85vw;
+  width: 640px;
+  height: 360px;
+  box-shadow: gray 0 0 5px;
+}
