@@ -1,6 +1,12 @@
 import { FaReact, FaNodeJs, FaAws, FaPython, FaCss3 } from "react-icons/fa";
-import { DiMongodb, DiSass } from "react-icons/di";
-import { SiRedux, SiNextDotJs, SiRstudio, SiJavascript } from "react-icons/si";
+import { DiMongodb, DiSass, DiPostgresql } from "react-icons/di";
+import {
+  SiRedux,
+  SiNextDotJs,
+  SiRstudio,
+  SiJavascript,
+  SiLatex,
+} from "react-icons/si";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { BiGitBranch } from "react-icons/bi";
 import capitalizeFirstLetter from "../../../util/capitalizeFirstLetter";
@@ -20,6 +26,8 @@ const colors = {
   HTML: "#e44d26",
   CSS: "#264de4",
   git: "#f05030",
+  postgres: "#336791",
+  LaTex: "#008080",
 };
 
 const icons = {
@@ -36,6 +44,8 @@ const icons = {
   HTML: <AiOutlineHtml5 />,
   CSS: <FaCss3 />,
   git: <BiGitBranch />,
+  postgres: <DiPostgresql />,
+  LaTex: <SiLatex />,
 };
 
 const StackElement = ({ stackElement }) => {

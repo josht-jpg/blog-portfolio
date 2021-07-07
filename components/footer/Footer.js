@@ -51,7 +51,7 @@ const Footer = () => {
               className={styles.socialMediaLink}
               title={socialMediaLink.title}
             >
-              <a href={socialMediaLinks.href} target="_blank" rel="noopener">
+              <a href={socialMediaLink.href} target="_blank" rel="noopener">
                 {socialMediaLink.icon}
               </a>
             </button>

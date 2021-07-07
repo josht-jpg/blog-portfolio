@@ -14,6 +14,8 @@ const skills = [
   "SASS",
   "python",
   "git",
+  "postgres",
+  "LaTex",
 ];
 
 const About = ({ aboutMeRef }) => (
@@ -22,7 +24,7 @@ const About = ({ aboutMeRef }) => (
 
     <div className={styles.paragraphsContainer}>
       <h3 className={styles.outerParagraph}>
-        I'm 22. I'm finishing up my last semester of a matheamtics and computing
+        I'm 22. I'm finishing up my last semester of a mathematics and computing
         science joint major at Simon Fraser University. I’m seeking a full-time
         role where I can help a company build cool things.
       </h3>
