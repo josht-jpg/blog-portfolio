@@ -27,17 +27,27 @@
 
 .outerParagraph {
   @extend .paragraph;
-  width: 29%;
 }
 
 .innerParagraph {
   @extend .paragraph;
-  width: 32%;
-  padding-left: 4%;
-  padding-right: 4%;
-  box-sizing: border-box;
-  border-right: 2px solid $main-blue;
-  border-left: 2px solid $main-blue;
+  margin: 2.5rem auto;
+}
+
+@media only screen and (min-width: 1045px) {
+  .outerParagraph {
+    width: 29%;
+  }
+
+  .innerParagraph {
+    width: 32%;
+    padding-left: 4%;
+    padding-right: 4%;
+    box-sizing: border-box;
+    border-right: 2px solid $main-blue;
+    border-left: 2px solid $main-blue;
+    margin: auto;
+  }
 }
 
 .skillsContainer {

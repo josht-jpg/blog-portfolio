@@ -3,7 +3,7 @@ import styles from "./FeatureSpotlight.module.scss";
 
 const FeatureSpotlight = ({ project }) =>
   project.features.map((feature, index) => (
-    <div>
+    <div className={styles.container}>
       <h3 className={styles.title}>{feature.title}</h3>
       <p
         className={styles.description}
