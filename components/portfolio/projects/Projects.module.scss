@@ -12,9 +12,14 @@
 }
 
 .projectsContainer {
-  display: flex;
-  flex-wrap: wrap;
-  width: 75vw;
   margin: auto;
-  justify-content: center;
+}
+
+@media only screen and (min-width: 890px) {
+  .projectsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75vw;
+    justify-content: center;
+  }
 }
