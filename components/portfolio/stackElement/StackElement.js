@@ -45,7 +45,7 @@ const icons = {
   CSS: <FaCss3 />,
   git: <BiGitBranch />,
   postgres: <DiPostgresql />,
-  LaTex: <SiLatex />,
+  LaTeX: <SiLatex />,
 };
 
 const StackElement = ({ stackElement }) => {
