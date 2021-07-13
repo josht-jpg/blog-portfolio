@@ -27,7 +27,7 @@ const colors = {
   CSS: "#264de4",
   git: "#f05030",
   postgres: "#336791",
-  LaTex: "#008080",
+  LaTeX: "#008080",
 };
 
 const icons = {
