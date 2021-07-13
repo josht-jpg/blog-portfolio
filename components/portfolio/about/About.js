@@ -15,7 +15,7 @@ const skills = [
   "python",
   "git",
   "postgres",
-  "LaTex",
+  "LaTeX",
 ];
 
 const About = ({ aboutMeRef }) => (
