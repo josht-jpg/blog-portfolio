@@ -17,7 +17,7 @@ const Welcome = ({ scrollTo }) => {
           {" "}
           <i className={styles.hello}>Hello</i>, I'm Joshua Taylor.
         </h1>
-        <h3>Fullstack Engineer, Student, and Ultramarathon Runner.</h3>
+        <h3>Fullstack Engineer and Ultramarathon Runner.</h3>
         <hr className={styles.upperRuler} />
         <h2>Portfolio Contents:</h2>
 

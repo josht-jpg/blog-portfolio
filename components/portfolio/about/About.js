@@ -25,8 +25,8 @@ const About = ({ aboutMeRef }) => (
     <div className={styles.paragraphsContainer}>
       <h3 className={styles.outerParagraph}>
         I'm 22. I'm finishing up my last semester of a mathematics and computing
-        science joint major at Simon Fraser University. I’m seeking a full-time
-        role where I can help a company build cool things.
+        science joint major at Simon Fraser University. In August I'll be
+        developing software at Pivot Subscriptions.
       </h3>
       <h3 className={styles.innerParagraph}>
         I love expanding my skills as a developer. Through working with other
