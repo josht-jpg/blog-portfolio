@@ -19,7 +19,7 @@ const Header = () => {
 
   return (
     <div className={styles.header}>
-      <div style={{ margin: "auto" }}>
+      <div style={{ justifySelf: "start", width: "175px" }}>
         <Link href="/">
           <h1 className={styles.name}>
             <i className={styles.firstName}>Joshua</i> Taylor

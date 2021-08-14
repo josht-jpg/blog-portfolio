@@ -16,7 +16,7 @@ const articles = ({ articles }) => {
   );
 };
 
-export async function getStaticProps(context) {
+export async function getStaticProps() {
   const { db } = await connectToDatabase();
 
   const data = await db

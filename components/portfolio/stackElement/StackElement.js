@@ -5,6 +5,7 @@ import {
   SiNextDotJs,
   SiRstudio,
   SiJavascript,
+  SiTypescript,
   SiLatex,
 } from "react-icons/si";
 import { AiOutlineHtml5 } from "react-icons/ai";
@@ -23,6 +24,7 @@ const colors = {
   R: "#4480ba",
   python: "#2b5b84",
   javaScript: "#fab700",
+  typescript: "#3178c6",
   HTML: "#e44d26",
   CSS: "#264de4",
   git: "#f05030",
@@ -41,6 +43,7 @@ const icons = {
   R: <SiRstudio />,
   python: <FaPython />,
   javaScript: <SiJavascript />,
+  typescript: <SiTypescript />,
   HTML: <AiOutlineHtml5 />,
   CSS: <FaCss3 />,
   git: <BiGitBranch />,

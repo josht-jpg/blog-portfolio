@@ -3,13 +3,13 @@ import styles from "./About.module.scss";
 
 const skills = [
   "javaScript",
+  "typescript",
   "react",
   "nodeJs",
   "mongoDB",
   "nextJs",
   "AWS",
   "redux",
-  "HTML",
   "CSS",
   "SASS",
   "python",
