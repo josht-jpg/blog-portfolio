@@ -1,4 +1,11 @@
-import { FaReact, FaNodeJs, FaAws, FaPython, FaCss3 } from "react-icons/fa";
+import {
+  FaReact,
+  FaNodeJs,
+  FaAws,
+  FaPython,
+  FaCss3,
+  FaRust,
+} from "react-icons/fa";
 import { DiMongodb, DiSass, DiPostgresql } from "react-icons/di";
 import {
   SiRedux,
@@ -7,9 +14,11 @@ import {
   SiJavascript,
   SiTypescript,
   SiLatex,
+  SiHasura,
 } from "react-icons/si";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { BiGitBranch } from "react-icons/bi";
+import { GrGraphQl } from "react-icons/gr";
 import capitalizeFirstLetter from "../../../util/capitalizeFirstLetter";
 import styles from "./StackElement.module.scss";
 
@@ -30,6 +39,9 @@ const colors = {
   git: "#f05030",
   postgres: "#336791",
   LaTeX: "#008080",
+  hasura: "#337ab7",
+  graphQl: "#e10098",
+  rust: "#ff5e15",
 };
 
 const icons = {
@@ -49,6 +61,9 @@ const icons = {
   git: <BiGitBranch />,
   postgres: <DiPostgresql />,
   LaTeX: <SiLatex />,
+  hasura: <SiHasura />,
+  graphQl: <GrGraphQl />,
+  rust: <FaRust />,
 };
 
 const StackElement = ({ stackElement }) => {
