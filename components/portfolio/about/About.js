@@ -11,7 +11,6 @@ const skills = [
   "mongoDB",
   "nextJs",
   "graphQl",
-  "hasura",
   "rust",
   "AWS",
   "redux",

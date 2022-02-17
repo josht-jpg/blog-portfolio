@@ -4,9 +4,9 @@ import {
   FaAws,
   FaPython,
   FaCss3,
-  FaRust,
+  // FaRust,
 } from "react-icons/fa";
-import { DiMongodb, DiSass, DiPostgresql } from "react-icons/di";
+import { DiMongodb, DiSass, DiPostgresql, DiRust } from "react-icons/di";
 import {
   SiRedux,
   SiNextDotJs,
@@ -14,7 +14,6 @@ import {
   SiJavascript,
   SiTypescript,
   SiLatex,
-  SiHasura,
 } from "react-icons/si";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { BiGitBranch } from "react-icons/bi";
@@ -61,9 +60,8 @@ const icons = {
   git: <BiGitBranch />,
   postgres: <DiPostgresql />,
   LaTeX: <SiLatex />,
-  hasura: <SiHasura />,
   graphQl: <GrGraphQl />,
-  rust: <FaRust />,
+  rust: <DiRust />,
 };
 
 const StackElement = ({ stackElement }) => {
