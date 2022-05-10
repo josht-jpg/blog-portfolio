@@ -9,7 +9,6 @@ const skills = [
   "nextJs",
   "postgres",
   "mongoDB",
-  "nextJs",
   "graphQl",
   "rust",
   "AWS",
