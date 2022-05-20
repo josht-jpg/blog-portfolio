@@ -4,20 +4,24 @@ import {
   MOTIVATION,
   FEATURE_SPOTLIGHTS,
   LESSONS_LEARNED,
+  VIDEO_DEMO,
 } from "../../../constants/projectConstants";
 import styles from "./SelectedProject.module.scss";
 import ProjectLinks from "./projectLinks/ProjectLinks";
 
-const dropDownItems = [MOTIVATION, FEATURE_SPOTLIGHTS, LESSONS_LEARNED];
+const dropDownItems = [
+  MOTIVATION,
+  FEATURE_SPOTLIGHTS,
+  LESSONS_LEARNED,
+  VIDEO_DEMO,
+];
 
 const SelectedProject = ({ project }) => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.title}>{project.title}</h1>
-      <hr
-        className={styles.ruler}
-        style={{ width: `${project.title.length * 15.5}px` }}
-      />
+      <h1 className={styles.title} style={{ marginBottom: "1rem" }}>
+        {project.title}
+      </h1>
 
       <div className={styles.gridContainer}>
         <div className={styles.detailsContainer}>
@@ -27,11 +31,13 @@ const SelectedProject = ({ project }) => {
             codeLink={project.codeLink}
           />
         </div>
-        <img
-          src={project.selectedImage}
-          alt={`Screenshot of ${project.title}`}
-          className={styles.screenshot}
-        />
+        <a href={project.liveLink}>
+          <img
+            src={project.selectedImage}
+            alt={`Screenshot of ${project.title}`}
+            className={styles.screenshot}
+          />
+        </a>
       </div>
 
       <h3 style={{ marginTop: "4rem" }}>Created with:</h3>
@@ -41,9 +47,11 @@ const SelectedProject = ({ project }) => {
         ))}
       </div>
 
-      {dropDownItems.map((dropDownItem) => (
-        <DropDown item={dropDownItem} project={project} />
-      ))}
+      {dropDownItems
+        .filter((item) => !!project[item])
+        .map((dropDownItem) => (
+          <DropDown item={dropDownItem} project={project} />
+        ))}
     </div>
   );
 };

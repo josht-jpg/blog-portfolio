@@ -10,7 +10,7 @@
 }
 
 .animateDropDown {
-  max-height: 700vh;
+  max-height: 100000px;
   transition: max-height 650ms ease-in;
   overflow-y: auto;
 }
@@ -48,4 +48,13 @@
   text-align: start;
   width: 75ch;
   font-size: 1.1rem;
+}
+
+.playerContainer {
+  margin: auto;
+  margin-bottom: 2rem;
+  max-width: 85vw;
+  width: 640px;
+  height: 360px;
+  box-shadow: gray 0 0 5px;
 }

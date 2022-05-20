@@ -13,7 +13,8 @@ const portfolio = ({ projects }) => {
   const contactRef = useRef(null);
 
   const scrollRefs = { aboutMeRef, projectsRef, contactRef };
-  const scrollTo = (type) => scrollRefs[type].current.scrollIntoView();
+  const scrollTo = (type) =>
+    scrollRefs[type].current.scrollIntoView({ behavior: "smooth" });
 
   return (
     <MainSection>
@@ -37,7 +38,7 @@ export async function getStaticProps(context) {
 
   const projectsData = await db
     .collection("projects")
-    .find({})
+    .find({ hide: false })
     .sort({ orderOfAppearence: 1 })
     .toArray();
   const properties = JSON.parse(JSON.stringify(projectsData));

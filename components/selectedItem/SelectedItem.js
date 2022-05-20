@@ -3,10 +3,14 @@ import SelectedBook from "./selectedBook/SelectedBook";
 import SelectedProject from "./selectedProject/SelectedProject";
 import styles from "./SelectedItem.module.scss";
 import { PROJECT, BOOK } from "../../constants/selectedItemConstants";
+import { useRef } from "react";
+import useOutsideAlerter from "../../hooks/useOutsideAlerter";
 
 const SelectedItem = ({ item, itemType, handleUnselect }) => {
+  const ref = useRef(null);
+  useOutsideAlerter(ref, handleUnselect);
   return (
-    <div className={styles.selectedBook}>
+    <div ref={ref} className={styles.selectedBook}>
       <span className={styles.backButton} onClick={handleUnselect}>
         <FaAngleUp /> Back
       </span>

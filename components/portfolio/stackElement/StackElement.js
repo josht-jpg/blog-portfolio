@@ -6,14 +6,15 @@ import {
   FaCss3,
   // FaRust,
 } from "react-icons/fa";
-import { DiMongodb, DiSass, DiPostgresql, DiRust } from "react-icons/di";
+import { DiMongodb, DiSass, DiPostgresql, DiRust, DiGo } from "react-icons/di";
 import {
   SiRedux,
-  SiNextDotJs,
+  SiNextdotjs,
   SiRstudio,
   SiJavascript,
   SiTypescript,
   SiLatex,
+  SiHasura,
 } from "react-icons/si";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import { BiGitBranch } from "react-icons/bi";
@@ -41,6 +42,8 @@ const colors = {
   hasura: "#337ab7",
   graphQl: "#e10098",
   rust: "#ff5e15",
+  go: "#007d9c",
+  hasura: "#1599e5",
 };
 
 const icons = {
@@ -50,7 +53,7 @@ const icons = {
   SASS: <DiSass />,
   redux: <SiRedux />,
   AWS: <FaAws />,
-  nextJs: <SiNextDotJs />,
+  nextJs: <SiNextdotjs />,
   R: <SiRstudio />,
   python: <FaPython />,
   javaScript: <SiJavascript />,
@@ -62,6 +65,8 @@ const icons = {
   LaTeX: <SiLatex />,
   graphQl: <GrGraphQl />,
   rust: <DiRust />,
+  go: <DiGo />,
+  hasura: <SiHasura />,
 };
 
 const StackElement = ({ stackElement }) => {

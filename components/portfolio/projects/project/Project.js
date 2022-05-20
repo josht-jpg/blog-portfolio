@@ -31,16 +31,11 @@ const Project = ({ project }) => {
           className={styles.header}
           style={{
             color: isHover && MAIN_BLUE,
+            marginBottom: "1rem",
           }}
         >
           {project.title}
         </h2>
-        <hr
-          className={styles.ruler}
-          style={{
-            width: project.title.length * 13.5,
-          }}
-        />
         <img
           className={styles.thumbnail}
           style={{

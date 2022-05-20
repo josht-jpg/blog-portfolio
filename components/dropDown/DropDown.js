@@ -6,7 +6,10 @@ import {
   MOTIVATION,
   FEATURE_SPOTLIGHTS,
   LESSONS_LEARNED,
+  VIDEO_DEMO,
+  headers,
 } from "../../constants/projectConstants";
+import ReactPlayer from "react-player";
 
 const DropDown = ({ item, project }) => {
   const [isSelected, setIsSelected] = useState(false);
@@ -19,7 +22,7 @@ const DropDown = ({ item, project }) => {
         className={styles.header}
         onClick={() => setIsSelected((prev) => !prev)}
       >
-        {item}
+        {headers[item]}
         {isSelected ? (
           <FaAngleUp className={styles.dropDownArrow} />
         ) : (
@@ -44,6 +47,10 @@ const DropDown = ({ item, project }) => {
              * https://reactjs.org/docs/dom-elements.html#dangerouslysetinnerhtml.
              * Stay safe!*/
           />
+        ) : item === VIDEO_DEMO ? (
+          <div className={styles.playerContainer}>
+            <ReactPlayer url={project.demoLink} controls={true} />
+          </div>
         ) : (
           item === LESSONS_LEARNED && (
             <div

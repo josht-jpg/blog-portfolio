@@ -7,15 +7,15 @@ const skills = [
   "react",
   "nodeJs",
   "nextJs",
+  "rust",
+  "go",
   "postgres",
   "mongoDB",
   "graphQl",
-  "rust",
-  "AWS",
+  "hasura",
   "redux",
   "CSS",
   "SASS",
-  "python",
   "git",
   "LaTeX",
 ];
@@ -26,9 +26,9 @@ const About = ({ aboutMeRef }) => (
 
     <div className={styles.paragraphsContainer}>
       <h3 className={styles.outerParagraph}>
-        I'm 23. I recently finished a mathematics and computer science joint
-        major at Simon Fraser University. Right now I'm developing software at
-        Pivot Subscriptions.
+        I'm 23. Right now I'm developing software at Pivot Subscriptions
+        Technologies. I have a degree in mathematics and computer science from
+        Simon Fraser University.{" "}
       </h3>
       <h3 className={styles.innerParagraph}>
         I love expanding my skills as a developer. Through working with other
