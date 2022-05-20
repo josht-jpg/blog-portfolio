@@ -1,11 +1,4 @@
-import {
-  FaReact,
-  FaNodeJs,
-  FaAws,
-  FaPython,
-  FaCss3,
-  // FaRust,
-} from "react-icons/fa";
+import { FaReact, FaNodeJs, FaAws, FaPython, FaCss3 } from "react-icons/fa";
 import { DiMongodb, DiSass, DiPostgresql, DiRust, DiGo } from "react-icons/di";
 import {
   SiRedux,
